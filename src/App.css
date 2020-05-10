@@ -1,0 +1,55 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 400px;
+}
+.App {
+  width: 1200px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+.Countries {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.CountryBox {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-bottom: 1px solid #bbb;
+}
+.CountryBox:hover {
+  transition: 0.3s;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid blue;
+  padding-bottom: 23px;
+  padding-top: 17px;
+  cursor: pointer;
+}
+
+.CountryBox .head {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.CountryBox .Flag {
+  width: 48px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+  height: 48px;
+  border-radius: 50%;
+}
+.CountryBox h3 {
+  margin-top: 10px;
+}
+.Totals{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
